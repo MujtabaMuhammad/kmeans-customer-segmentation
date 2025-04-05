@@ -25,30 +25,23 @@ Missing values were dropped to ensure accurate clustering
 
 Converted InvoiceDate to numerical format (days since 1970)
 
-Aggregated data by CustomerID to get:
+Aggregated data by CustomerID to get: Quantity_sum, InvoiceDate_min,InvoiceDate_max, InvoiceDate_count. Normalized all numerical features to a 1–100 scale
 
-Quantity_sum
-
-InvoiceDate_min
-
-InvoiceDate_max
-
-InvoiceDate_count
-
-Normalized all numerical features to a 1–100 scale
+![Sample Data](images/sample-data.JPG)
 
 ### Clustering Approach
 
 Implemented K-Means clustering manually for transparency and customization
 
+
+Used the Elbow Method to identify optimal cluster count (k=3)
+![Elbow Plot](images/elbow-function.JPG)
+
 Used Euclidean distance to assign points to centroids
 
 Recalculated centroids iteratively until convergence
 
-Used the Elbow Method to identify optimal cluster count (k=3)
-
-## Elbow Plot
-![Elbow Plot](images/elbow-function.JPG)
+![Clusters](images/cluster-plot.JPG)
 
 
 ## Dimensionality Reduction with PCA
@@ -57,6 +50,7 @@ Applied Principal Component Analysis to project high-dimensional data into 2D fo
 
 First two principal components captured most of the variance
 
+![Clusters](images/pca-coefficients.JPG)
 
 Note: Due to the random initialization in K-Means, cluster sizes and centroids may slightly vary between runs. However, the overall patterns and group behaviors remain consistent.
 
