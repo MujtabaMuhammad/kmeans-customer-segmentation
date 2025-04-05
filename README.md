@@ -48,7 +48,7 @@ Recalculated centroids iteratively until convergence
 Used the Elbow Method to identify optimal cluster count (k=3)
 
 ## Elbow Plot
-
+![Elbow Plot](images/elbow-function.JPG)
 
 
 ## Dimensionality Reduction with PCA
